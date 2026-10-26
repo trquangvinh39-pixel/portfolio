@@ -73,7 +73,7 @@ PF.jobs = [
     summary: { vi: 'Phụ trách Bộ phận Kế hoạch, báo cáo Tổng Giám đốc; quản lý FP&A, phát triển mạng lưới và mảng dữ liệu, BI.', en: 'Lead the Planning Department, reporting to the CEO; own FP&A, network development and the data & BI function.' },
     points: {
       vi: [
-        'Chủ trì ngân sách năm, kế hoạch kinh doanh tháng và dự báo cuốn chiếu theo ngành hàng, khu vực, cửa hàng',
+        'Phối hợp với Tài chính – Kế toán và các khối xây dựng ngân sách năm; chủ trì kế hoạch kinh doanh tháng và dự báo cuốn chiếu theo ngành hàng, khu vực, cửa hàng',
         'Xây dựng mô hình kế hoạch doanh thu ngày từ dưới lên, tự phân bổ chỉ tiêu đến từng cửa hàng, ngành hàng và ngày',
         'Xây lại chỉ tiêu các tháng còn lại cho toàn bộ ngành hàng trong 5 ngày làm việc sau tái cấu trúc mạng lưới',
         'Mô hình hoá chi phí ngưng sớm (phạt thuê, cọc, chi phí chưa phân bổ, lợi nhuận mất đi) làm cơ sở quyết định đóng cửa',
@@ -83,7 +83,7 @@ PF.jobs = [
         'Xây dựng hệ sinh thái web app nội bộ: quản lý công việc, báo cáo, tra cứu dữ liệu và chatbot AI',
       ],
       en: [
-        'Lead the annual budget, monthly business plan and rolling forecast by category, region and store',
+        'Co-develop the annual budget with Finance and business units; lead the monthly business plan and rolling forecast by category, region and store',
         'Built a bottom-up daily revenue plan cascading monthly targets to every store, category and day',
         'Rebuilt remaining-year targets for all categories within 5 working days after a network restructuring',
         'Modelled early exit costs (rent penalty, deposit, unamortised fit-out, lost profit) to guide closure decisions',

@@ -6,6 +6,12 @@
       "runtimeExecutable": "python",
       "runtimeArgs": ["-m", "http.server", "5180", "--directory", "web"],
       "port": 5180
+    },
+    {
+      "name": "cv",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "5181"],
+      "port": 5181
     }
   ]
 }
