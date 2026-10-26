@@ -477,6 +477,6 @@ PF.certs = [
 ];
 
 PF.interests = {
-  vi: ['Tài chính và FP&A', 'Business Intelligence', 'Quản trị bán lẻ', 'AI ứng dụng trong doanh nghiệp', 'Chuyển đổi số', 'Đọc sách và học tập liên tục'],
-  en: ['Finance and FP&A', 'Business Intelligence', 'Retail management', 'Practical AI in business', 'Digital transformation', 'Reading and lifelong learning'],
+  vi: ['Tài chính và FP&A', 'Business Intelligence', 'Quản trị bán lẻ', 'AI ứng dụng trong doanh nghiệp', 'Chuyển đổi số'],
+  en: ['Finance and FP&A', 'Business Intelligence', 'Retail management', 'Practical AI in business', 'Digital transformation'],
 };

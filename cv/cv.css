@@ -74,14 +74,20 @@ h2::before { content: ""; width: 2.6mm; height: 2.6mm; border-radius: .7mm; back
 /* Cột chính */
 .summary { font-size: 8.7pt; color: var(--ink-2); text-align: justify; }
 .summary b { color: var(--ink); }
-.kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2.2mm; margin-top: 2.4mm; }
-.kpi { border: 1px solid var(--line); border-radius: 2.4mm; padding: 2.4mm 2.6mm 2mm; background: linear-gradient(160deg, var(--teal-soft), #fff 75%); position: relative; overflow: hidden; }
+.kpis { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.8mm; margin-top: 2.4mm; }
+.kpi { border: 1px solid var(--line); border-radius: 2.4mm; padding: 2mm 2.2mm 1.9mm 2.8mm; background: linear-gradient(160deg, var(--teal-soft), #fff 75%); position: relative; overflow: hidden; }
 .kpi::before { content: ""; position: absolute; inset: 0 auto 0 0; width: .9mm; background: var(--teal-2); }
-.kpi b { display: block; font-size: 14.5pt; font-weight: 800; color: var(--dark); line-height: 1.1; }
+.kpi i { display: block; font-style: normal; font-size: 6.1pt; font-weight: 800; letter-spacing: .6pt; text-transform: uppercase; color: var(--teal); margin-bottom: .3mm; }
+.kpi b { display: block; font-size: 13.5pt; font-weight: 800; color: var(--dark); line-height: 1.1; }
 .kpi b em { font-style: normal; color: var(--teal); }
-.kpi span { font-size: 7.3pt; color: var(--ink-2); line-height: 1.25; display: block; margin-top: .5mm; }
-.goal { margin-top: 2.2mm; font-size: 8.2pt; color: var(--ink-2); padding: 2mm 3mm; border-left: .8mm solid var(--amber); background: #FDF8EE; border-radius: 0 2mm 2mm 0; }
-.goal b { color: var(--ink); }
+.kpi span { font-size: 7pt; color: var(--ink-2); line-height: 1.25; display: block; margin-top: .4mm; }
+.kpi.ai { background: radial-gradient(circle at 100% 0%, rgba(20,195,181,.35), transparent 55%), linear-gradient(150deg, var(--dark), var(--dark-2)); border-color: var(--dark); }
+.kpi.ai i { color: #5EE0CF; }
+.kpi.ai b { color: #fff; }
+.kpi.ai b em { color: #5EE0CF; }
+.kpi.ai span { color: #C9E3DF; }
+.goal { margin-top: 2.2mm; font-size: 8.2pt; color: var(--ink-2); padding: 2mm 3mm; border-left: .8mm solid var(--teal-2); background: var(--teal-soft); border-radius: 0 2mm 2mm 0; }
+.goal b { color: var(--teal); }
 
 .job { position: relative; padding-left: 5mm; }
 .job::before { content: ""; position: absolute; left: .9mm; top: 2mm; bottom: -2mm; width: .5mm; background: var(--line); }

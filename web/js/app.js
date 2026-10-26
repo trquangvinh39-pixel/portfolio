@@ -17,7 +17,7 @@
     skip: ['Bỏ qua tới nội dung', 'Skip to content'], brandSub: ['FP&A · Dữ liệu · AI', 'FP&A · Data · AI'],
     navAbout: ['Giới thiệu', 'About'], navJourney: ['Hành trình', 'Journey'], navProjects: ['Dự án', 'Projects'], navSkills: ['Năng lực', 'Skills'], navContact: ['Liên hệ', 'Contact'],
     cv: ['Tải CV', 'CV'], cvFull: ['Tải CV (PDF)', 'Download CV (PDF)'],
-    openTo: ['Sẵn sàng cho vai trò lãnh đạo tài chính & chiến lược bán lẻ', 'Open to leadership roles in retail finance & strategy'],
+    openTo: ['Kế hoạch · FP&A · Dữ liệu & AI cho doanh nghiệp bán lẻ', 'Planning · FP&A · Data & AI for retail businesses'],
     ctaProjects: ['Xem 9 dự án', 'See 9 projects'], ctaQuick: ['Xem nhanh 30 giây', '30-second summary'],
     heroCo: ['Chuỗi bán lẻ ~50 cửa hàng', 'Retail chain, ~50 stores'], b1: ['Ngân sách · Dự báo', 'Budget · Forecast'], b3: ['Hỏi bằng tiếng Việt', 'Ask in plain language'],
     aboutH: ['Tài chính, dữ liệu và AI vận hành như một hệ thống', 'Finance, data and AI working as one system'], howH: ['Cách tôi làm việc', 'How I work'],
