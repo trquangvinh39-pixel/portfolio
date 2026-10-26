@@ -12,7 +12,7 @@ PF.profile = {
   linkedin: 'https://www.linkedin.com/in/tran-quang-vinh-090866193/',
   linkedinShort: 'tran-quang-vinh-090866193',
   location: { vi: 'TP. Hồ Chí Minh, Việt Nam', en: 'Ho Chi Minh City, Vietnam' },
-  title: { vi: 'Trưởng phòng Kế hoạch', en: 'Head of Planning' },
+  title: { vi: 'Trưởng bộ phận Kế hoạch', en: 'Head of Planning' },
   roles: {
     vi: ['FP&A ngành bán lẻ', 'Phân tích P&L cửa hàng', 'Phát triển mạng lưới', 'Power BI · SQL Server', 'Agentic AI & web app'],
     en: ['Retail FP&A', 'Store P&L analytics', 'Network expansion', 'Power BI · SQL Server', 'Agentic AI & web apps'],
@@ -67,7 +67,7 @@ PF.phases = [
 PF.jobs = [
   {
     id: 'head', phase: 'lead', current: true,
-    role: { vi: 'Trưởng phòng Kế hoạch', en: 'Head of Planning' },
+    role: { vi: 'Trưởng bộ phận Kế hoạch', en: 'Head of Planning' },
     org: { vi: 'Công ty TNHH Bán lẻ Phương Nam (thuộc PNC)', en: 'Phuong Nam Retail (PNC)' },
     orgNote: { vi: 'Chuỗi nhà sách và bán lẻ, ~50 cửa hàng', en: 'Bookstore & lifestyle chain, ~50 stores' },
     period: { vi: '03/2026 – nay', en: 'Mar 2026 – present' },
