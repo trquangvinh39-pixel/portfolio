@@ -29,6 +29,7 @@ PF.kpis = [
   { value: 50, suffix: '', label: { vi: 'cửa hàng trong phạm vi kế hoạch', en: 'stores in planning scope' }, note: { vi: 'chuỗi nhà sách và bán lẻ toàn quốc', en: 'nationwide bookstore & lifestyle chain' }, link: '#du-an/daily-plan' },
   { value: 20, suffix: '+', label: { vi: 'dự án đầu tư đã thẩm định', en: 'investment projects appraised' }, note: { vi: 'mở mới, di dời, cải tạo, bookcafe, kho', en: 'new stores, relocations, refits, bookcafes, warehouses' }, link: '#du-an/feasibility' },
   { value: 70, suffix: '%', label: { vi: 'yêu cầu dữ liệu chuyển sang tự phục vụ', en: 'data requests now self service' }, note: { vi: 'nhờ Agentic AI, tiết kiệm ~40 giờ/tháng', en: 'via Agentic AI, ~40 hours saved a month' }, link: '#du-an/agentic-ai' },
+  { value: 10, suffix: '+', label: { vi: 'web app & công cụ AI nội bộ', en: 'AI-powered web apps & tools' }, note: { vi: '15+ module, trợ lý AI, dùng chung một hệ tài khoản', en: '15+ modules, AI assistant, one shared login' }, link: '#du-an/webapp' },
 ];
 
 PF.about = {
@@ -234,9 +235,9 @@ PF.projects = [
   {
     id: 'webapp', cat: ['app', 'data'], year: '2026', icon: 'app', hue: 200, featured: true,
     title: { vi: 'Hệ sinh thái web app phòng Kế hoạch', en: 'Planning web app ecosystem' },
-    tagline: { vi: '3 web app dùng chung một hệ tài khoản: quản lý việc, báo cáo ngày, báo cáo tuần, tra cứu dữ liệu và trợ lý AI, xây bằng phát triển có AI hỗ trợ.', en: 'Three web apps on one account system: task tracking, daily and weekly reports, data lookup and an AI assistant, built with AI-assisted development.' },
+    tagline: { vi: 'Hệ sinh thái web app nội bộ ứng dụng AI, dùng chung một hệ tài khoản: quản lý việc, báo cáo ngày, báo cáo tuần, tra cứu dữ liệu và trợ lý AI, xây bằng phát triển có AI hỗ trợ.', en: 'An ecosystem of AI-powered internal web apps on one account system: task tracking, daily and weekly reports, data lookup and an AI assistant, built with AI-assisted development.' },
     metrics: [
-      { v: '3', l: { vi: 'web app trên một nền', en: 'apps on one platform' } },
+      { v: '10+', l: { vi: 'web app & công cụ AI', en: 'AI web apps & tools' } },
       { v: '15+', l: { vi: 'module nghiệp vụ', en: 'business modules' } },
       { v: '1', l: { vi: 'hệ tài khoản & phân quyền chung', en: 'shared login & permissions' } },
     ],
