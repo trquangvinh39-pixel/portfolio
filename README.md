@@ -43,12 +43,16 @@ Mở <http://localhost:5180>. Chưa dán khoá Supabase thì trang vẫn chạy 
 
 ## Đưa lên mạng (làm một lần)
 
+> Hướng dẫn từng cú bấm, dễ hiểu: **[HUONG-DAN-DUA-LEN-MANG.md](HUONG-DAN-DUA-LEN-MANG.md)**
+
 ### Bước 1 · Supabase (form liên hệ + lượt xem)
+
+> Hướng dẫn chi tiết từng cú bấm (nối khoá, đọc lời nhắn, xem lượt xem): **[HUONG-DAN-SUPABASE.md](HUONG-DAN-SUPABASE.md)**
 
 1. Vào <https://supabase.com/dashboard> → **New project** (nên tạo project riêng cho portfolio, tách khỏi project công ty). Đặt tên `portfolio`, vùng Singapore.
 2. **SQL Editor** → dán toàn bộ `supabase/portfolio.sql` → **Run**. Thấy dòng `TẤT CẢ KIỂM TRA ĐẠT` là xong.
 3. **Project Settings → API**: chép **Project URL** và khoá **anon public** dán vào `web/config.js`. Tuyệt đối không dùng khoá `service_role`.
-4. Đọc lời nhắn: **Table Editor → pf_messages**. Xem lượt xem: **pf_counters**.
+4. Đọc lời nhắn và xem lượt xem: xem Phần C, D trong [HUONG-DAN-SUPABASE.md](HUONG-DAN-SUPABASE.md).
 
 ### Bước 2 · GitHub
 

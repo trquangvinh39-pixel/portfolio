@@ -451,12 +451,13 @@
     client = window.supabase.createClient(c.SUPABASE_URL, c.SUPABASE_ANON_KEY, { auth: { persistSession: false } });
     return client;
   }
-  function bump(key, kind) {
+  function bump(key, kind, onOk) {
     var sb = db(); if (!sb) return;
     sb.rpc('pf_bump', { p_key: key, p_kind: kind }).then(function (r) {
       if (r.error || !r.data) return;
       var row = Array.isArray(r.data) ? r.data[0] : r.data;
       if (!row) return;
+      if (onOk) onOk();
       stats[key] = { views: row.views, likes: row.likes };
       if (key === 'site') showFoot();
       if (key === current) $('#dLikeN').textContent = row.likes || '';
@@ -470,7 +471,7 @@
       renderProjects(); showFoot();
     });
     var k = 'pf-visit-' + new Date().toISOString().slice(0, 10);
-    if (!store(k)) { store(k, '1'); bump('site', 'view'); }
+    if (!store(k)) bump('site', 'view', function () { store(k, '1'); });
   }
   function showFoot() { var s = stats.site; $('#footStats').textContent = s && s.views ? '👁 ' + Number(s.views).toLocaleString(PF.lang === 'en' ? 'en-US' : 'vi-VN') + ' ' + m('views') : ''; }
 
