@@ -1,5 +1,7 @@
 # Portfolio · Trần Quang Vinh
 
+**Địa chỉ: <https://tranquangvinh-portfolio.netlify.app>** · bản tiếng Anh: <https://tranquangvinh-portfolio.netlify.app/#en>
+
 Trang portfolio cá nhân song ngữ (VI/EN): Trưởng bộ phận Kế hoạch · FP&A · Dữ liệu · Agentic AI.
 Web tĩnh (HTML/CSS/JS thuần, không cần build) → **GitHub** → **Netlify**; form liên hệ và bộ đếm lượt xem dùng **Supabase**.
 
