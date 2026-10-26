@@ -12,7 +12,7 @@ PF.profile = {
   linkedin: 'https://www.linkedin.com/in/tran-quang-vinh-090866193/',
   linkedinShort: 'tran-quang-vinh-090866193',
   location: { vi: 'TP. Hồ Chí Minh, Việt Nam', en: 'Ho Chi Minh City, Vietnam' },
-  title: { vi: 'Trưởng bộ phận Kế hoạch', en: 'Head of Planning' },
+  title: { vi: 'Trưởng phòng Kế hoạch', en: 'Head of Planning' },
   roles: {
     vi: ['FP&A ngành bán lẻ', 'Phân tích P&L cửa hàng', 'Phát triển mạng lưới', 'Power BI · SQL Server', 'Agentic AI & web app'],
     en: ['Retail FP&A', 'Store P&L analytics', 'Network expansion', 'Power BI · SQL Server', 'Agentic AI & web apps'],
@@ -34,7 +34,7 @@ PF.kpis = [
 
 PF.about = {
   intro: {
-    vi: 'Tôi phụ trách Bộ phận Kế hoạch tại một chuỗi nhà sách và bán lẻ khoảng 50 cửa hàng trên toàn quốc, báo cáo Tổng Giám đốc và phối hợp chặt với Giám đốc Vận hành, bao gồm cả FP&A, phát triển mạng lưới và mảng dữ liệu, BI.',
+    vi: 'Tôi phụ trách Phòng Kế hoạch tại một chuỗi nhà sách và bán lẻ khoảng 50 cửa hàng trên toàn quốc, báo cáo Tổng Giám đốc và phối hợp chặt với Giám đốc Vận hành, bao gồm cả FP&A, phát triển mạng lưới và mảng dữ liệu, BI.',
     en: 'I lead the Planning Department at a nationwide bookstore and lifestyle retail chain of around 50 stores, reporting to the CEO and working closely with the COO, covering FP&A, network development and the data and BI function.',
   },
   story: {
@@ -67,11 +67,11 @@ PF.phases = [
 PF.jobs = [
   {
     id: 'head', phase: 'lead', current: true,
-    role: { vi: 'Trưởng bộ phận Kế hoạch', en: 'Head of Planning' },
+    role: { vi: 'Trưởng phòng Kế hoạch', en: 'Head of Planning' },
     org: { vi: 'Công ty TNHH Bán lẻ Phương Nam (thuộc PNC)', en: 'Phuong Nam Retail (PNC)' },
     orgNote: { vi: 'Chuỗi nhà sách và bán lẻ, ~50 cửa hàng', en: 'Bookstore & lifestyle chain, ~50 stores' },
     period: { vi: '03/2026 – nay', en: 'Mar 2026 – present' },
-    summary: { vi: 'Phụ trách Bộ phận Kế hoạch, báo cáo Tổng Giám đốc; quản lý FP&A, phát triển mạng lưới và mảng dữ liệu, BI.', en: 'Lead the Planning Department, reporting to the CEO; own FP&A, network development and the data & BI function.' },
+    summary: { vi: 'Phụ trách Phòng Kế hoạch, báo cáo Tổng Giám đốc; quản lý FP&A, phát triển mạng lưới và mảng dữ liệu, BI.', en: 'Lead the Planning Department, reporting to the CEO; own FP&A, network development and the data & BI function.' },
     points: {
       vi: [
         'Phối hợp với Tài chính – Kế toán và các khối xây dựng ngân sách năm; chủ trì kế hoạch kinh doanh tháng và dự báo cuốn chiếu theo ngành hàng, khu vực, cửa hàng',
