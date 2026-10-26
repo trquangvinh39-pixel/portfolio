@@ -4,7 +4,7 @@
 :root {
   --ink: #12302D; --ink-2: #3D5956; --muted: #6C8582; --line: #D3E5E2;
   --dark: #0B2A2E; --dark-2: #12403F; --teal: #0E9C95; --teal-2: #14C3B5; --teal-soft: #E4F4F1;
-  --side: #F3F8F7; --amber: #E3A23B;
+  --side: #F3F8F7; --blue: #1C86A0;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
@@ -14,26 +14,27 @@ body { font-family: "Be Vietnam Pro", Arial, sans-serif; color: var(--ink); font
 @media print { body { background: #fff; } .page { margin: 0; } }
 
 /* Header trang 1 */
-.hd { position: relative; display: flex; align-items: center; gap: 7mm; padding: 7.5mm 11mm 7mm 11mm; color: #fff; overflow: hidden;
-  background: radial-gradient(circle at 92% -10%, rgba(20,195,181,.45), transparent 45%), linear-gradient(120deg, var(--dark) 0%, var(--dark-2) 100%); }
-.hd::after { content: ""; position: absolute; inset: auto 0 0 0; height: 1.4mm; background: linear-gradient(90deg, var(--teal-2), var(--amber)); }
-.photo { width: 34mm; height: 34mm; border-radius: 50%; padding: 1.1mm; flex: none; background: conic-gradient(from 140deg, var(--teal-2), var(--amber), #5EE0CF, var(--teal-2)); }
-.photo img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 1mm solid var(--dark); display: block; }
+.hd { position: relative; display: flex; align-items: center; gap: 7mm; padding: 7.5mm 11mm 7mm 11mm; color: var(--ink); overflow: hidden;
+  background: radial-gradient(ellipse 60% 120% at 95% 0%, rgba(20,195,181,.26), transparent 60%), radial-gradient(ellipse 45% 100% at 0% 100%, rgba(15,163,160,.14), transparent 60%), linear-gradient(120deg, #E4F4F1 0%, #F6FAF9 42%, #FFFFFF 64%, #EAF7F4 100%); border-bottom: 1px solid var(--line); }
+.hd::after { content: ""; position: absolute; inset: auto 0 0 0; height: 1.4mm; background: linear-gradient(90deg, var(--teal), var(--teal-2) 55%, var(--blue)); }
+.photo { width: 34mm; height: 34mm; border-radius: 50%; padding: 1.1mm; flex: none; background: conic-gradient(from 140deg, var(--teal-2), var(--blue), #5EE0CF, var(--teal-2)); box-shadow: 0 2mm 6mm rgba(14,156,149,.18); }
+.photo img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 1mm solid #fff; display: block; }
 .hd-main { flex: 1; min-width: 0; }
-.hd h1 { font-size: 25pt; font-weight: 800; letter-spacing: .6pt; line-height: 1.05; }
-.hd .role { font-size: 12.5pt; font-weight: 600; color: #5EE0CF; margin-top: 1.6mm; }
-.hd .tags { font-size: 8.6pt; color: #B9D6D2; margin-top: .8mm; letter-spacing: .2pt; }
-.contacts { display: grid; grid-template-columns: auto auto; gap: 1.3mm 7mm; margin-top: 3.6mm; font-size: 8.3pt; color: #E3F2EF; }
+.hd h1 { font-size: 25pt; font-weight: 800; letter-spacing: .6pt; line-height: 1.05; color: var(--dark); }
+.hd .role { font-size: 12.5pt; font-weight: 700; color: var(--teal); margin-top: 1.6mm; }
+.hd .tags { font-size: 8.6pt; color: var(--ink-2); margin-top: .8mm; letter-spacing: .2pt; }
+.contacts { display: grid; grid-template-columns: auto auto; gap: 1.3mm 7mm; margin-top: 3.6mm; font-size: 8.3pt; color: var(--ink); }
 .contacts span { display: flex; align-items: center; gap: 1.8mm; white-space: nowrap; }
-.contacts svg { width: 3.4mm; height: 3.4mm; stroke: #5EE0CF; fill: none; stroke-width: 2; flex: none; }
+.contacts svg { width: 3.4mm; height: 3.4mm; stroke: var(--teal); fill: none; stroke-width: 2; flex: none; }
 .contacts a { color: inherit; text-decoration: none; }
 
 /* Header trang 2 */
-.hd2 { display: flex; align-items: center; justify-content: space-between; padding: 4.2mm 11mm; background: var(--dark); color: #fff; position: relative; }
-.hd2::after { content: ""; position: absolute; inset: auto 0 0 0; height: .9mm; background: linear-gradient(90deg, var(--teal-2), var(--amber)); }
-.hd2 b { font-size: 12pt; letter-spacing: .5pt; }
-.hd2 b small { font-weight: 500; font-size: 8.6pt; color: #5EE0CF; margin-left: 2.5mm; letter-spacing: 0; }
-.hd2 span { font-size: 7.8pt; color: #B9D6D2; }
+.hd2 { display: flex; align-items: center; justify-content: space-between; padding: 4.2mm 11mm; color: var(--ink); position: relative;
+  background: linear-gradient(120deg, #E4F4F1 0%, #F6FAF9 50%, #EAF7F4 100%); border-bottom: 1px solid var(--line); }
+.hd2::after { content: ""; position: absolute; inset: auto 0 0 0; height: .9mm; background: linear-gradient(90deg, var(--teal), var(--teal-2) 55%, var(--blue)); }
+.hd2 b { font-size: 12pt; letter-spacing: .5pt; color: var(--dark); }
+.hd2 b small { font-weight: 600; font-size: 8.6pt; color: var(--teal); margin-left: 2.5mm; letter-spacing: 0; }
+.hd2 span { font-size: 7.8pt; color: var(--ink-2); }
 
 /* Lưới thân trang */
 .body { flex: 1; display: grid; grid-template-columns: 58mm 1fr; min-height: 0; }
