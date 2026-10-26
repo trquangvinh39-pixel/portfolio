@@ -1,0 +1,136 @@
+<!doctype html>
+<!-- Ảnh bìa LinkedIn (?v=linkedin, 1584×396, tiếng Anh) và Zalo (?v=zalo, 1280×800, tiếng Việt).
+     Xuất ảnh: banners/make-banners.bat -->
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+  :root { --dark: #071A1F; --dark-2: #0E3436; --teal: #14C3B5; --teal-3: #5EE0CF; --amber: #F5B544; --fg: #E9F6F3; --muted: #9FC2BD; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { overflow: hidden; }
+  body { font-family: "Be Vietnam Pro", Arial, sans-serif; color: var(--fg); position: relative;
+    background: radial-gradient(ellipse at 85% 0%, rgba(20,195,181,.28), transparent 55%), radial-gradient(ellipse at 0% 100%, rgba(245,181,68,.10), transparent 50%), linear-gradient(120deg, var(--dark) 0%, #0A2629 55%, var(--dark-2) 100%); }
+  svg.bg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(94,224,207,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(94,224,207,.045) 1px, transparent 1px); background-size: 44px 44px; }
+  .bar { position: absolute; left: 0; right: 0; bottom: 0; height: 6px; background: linear-gradient(90deg, var(--teal), var(--teal-3) 60%, var(--amber)); }
+  .kicker { font-family: "JetBrains Mono", monospace; font-weight: 700; color: var(--teal-3); letter-spacing: 3px; text-transform: uppercase; }
+  .kicker span { color: var(--amber); }
+  h1 { font-weight: 900; letter-spacing: -1px; line-height: 1.06; }
+  h1 em { font-style: normal; background: linear-gradient(100deg, var(--teal-3), var(--amber)); -webkit-background-clip: text; color: transparent; }
+  .sub { color: var(--muted); font-weight: 500; }
+  .sub b { color: var(--fg); font-weight: 700; }
+  .kpis { display: flex; }
+  .kpi { border-left: 2px solid rgba(94,224,207,.45); }
+  .kpi b { display: block; font-family: "JetBrains Mono", monospace; font-weight: 700; color: #fff; line-height: 1; }
+  .kpi b i { font-style: normal; color: var(--teal-3); }
+  .kpi small { display: block; color: var(--muted); line-height: 1.25; }
+  .kpi.ai b i { color: var(--amber); }
+  .link { display: flex; align-items: center; background: rgba(255,255,255,.06); border: 1.5px solid rgba(94,224,207,.45); border-radius: 18px; backdrop-filter: blur(6px); }
+  .qr { background: #fff; border-radius: 10px; flex: none; }
+  .qr img { display: block; width: 100%; height: 100%; }
+  .link .t small { display: block; color: var(--muted); font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; }
+  .link .t b { display: block; color: #fff; font-weight: 700; }
+  .link .t b span { color: var(--teal-3); }
+
+  /* ===== LinkedIn 1584×396 — ảnh đại diện che góc dưới trái, nội dung dồn sang phải ===== */
+  body.linkedin { width: 1584px; height: 396px; }
+  .linkedin .wrap { position: absolute; left: 450px; right: 64px; top: 0; bottom: 6px; display: flex; align-items: center; gap: 40px; }
+  .linkedin .main { flex: 1; min-width: 0; }
+  .linkedin .kicker { font-size: 15px; }
+  .linkedin h1 { font-size: 36px; margin: 10px 0 10px; white-space: nowrap; }
+  .linkedin .sub { font-size: 18px; white-space: nowrap; }
+  .linkedin .kpis { gap: 26px; margin-top: 22px; }
+  .linkedin .kpi { padding-left: 13px; }
+  .linkedin .kpi b { font-size: 27px; }
+  .linkedin .kpi small { font-size: 13px; margin-top: 5px; }
+  .linkedin .link { flex-direction: column; gap: 12px; padding: 16px 16px 14px; text-align: center; width: 232px; }
+  .linkedin .qr { width: 132px; height: 132px; padding: 9px; }
+  .linkedin .link .t small { font-size: 10.5px; letter-spacing: 1px; white-space: nowrap; }
+  .linkedin .link .t b { font-size: 13.5px; margin-top: 3px; }
+
+  /* ===== Zalo 1280×800 — ảnh đại diện che giữa phía dưới, nội dung ở nửa trên ===== */
+  body.zalo { width: 1280px; height: 800px; }
+  .zalo .wrap { position: absolute; left: 0; right: 0; top: 74px; display: flex; flex-direction: column; align-items: center; text-align: center; }
+  .zalo .kicker { font-size: 17px; }
+  .zalo h1 { font-size: 58px; margin: 18px 0 14px; max-width: 1000px; }
+  .zalo .sub { font-size: 23px; }
+  .zalo .kpis { gap: 34px; margin-top: 30px; }
+  .zalo .kpi { padding-left: 15px; text-align: left; }
+  .zalo .kpi b { font-size: 34px; }
+  .zalo .kpi small { font-size: 15px; margin-top: 6px; }
+  .zalo .main { display: flex; flex-direction: column; align-items: center; }
+  .zalo .link { gap: 18px; padding: 12px 22px 12px 12px; margin-top: 34px; }
+  .zalo .qr { width: 92px; height: 92px; padding: 7px; }
+  .zalo .link .t { text-align: left; }
+  .zalo .link .t small { font-size: 13px; }
+  .zalo .link .t b { font-size: 22px; margin-top: 4px; }
+</style></head>
+<body>
+<svg class="bg" id="bg"></svg>
+<div class="grid"></div>
+<div class="wrap" id="wrap"></div>
+<div class="bar"></div>
+<script>
+  var v = /v=zalo/.test(location.search) ? 'zalo' : 'linkedin';
+  document.body.className = v;
+  var W = v === 'zalo' ? 1280 : 1584, H = v === 'zalo' ? 800 : 396;
+  var URL_TXT = 'tranquangvinh-portfolio<span>.netlify.app</span>';
+
+  var T = {
+    linkedin: {
+      kicker: 'Retail FP&amp;A <span>•</span> Data &amp; BI <span>•</span> Agentic AI',
+      h1: 'Turning retail data into <em>profitable decisions</em>',
+      sub: '<b>Head of Planning</b> · Forecasting · Store P&amp;L · Network expansion · Power BI, SQL',
+      kpis: [['9', ' yrs', 'in planning'], ['~50', '', 'stores in scope'], ['20', '+', 'projects appraised'], ['~70', '%', 'self-service via AI', 1], ['3', ' apps', 'AI-powered web apps', 1]],
+      link: ['Portfolio · 9 demos', 'tranquangvinh-portfolio<br><span>.netlify.app</span>'],
+    },
+    zalo: {
+      kicker: 'FP&amp;A bán lẻ <span>•</span> Dữ liệu &amp; BI <span>•</span> Agentic AI',
+      h1: 'Biến dữ liệu bán lẻ thành<br><em>quyết định có lợi nhuận</em>',
+      sub: '<b>Trưởng bộ phận Kế hoạch</b> · Kế hoạch &amp; dự báo · P&amp;L cửa hàng · Phát triển mạng lưới',
+      kpis: [['9', ' năm', 'hoạch định'], ['~50', '', 'cửa hàng'], ['20', '+', 'dự án thẩm định'], ['~70', '%', 'tự phục vụ nhờ AI', 1], ['3', ' app', 'web app ứng dụng AI', 1]],
+      link: ['Portfolio · 9 dự án có demo', URL_TXT],
+    },
+  }[v];
+
+  document.getElementById('wrap').innerHTML =
+    '<div class="main"><p class="kicker">' + T.kicker + '</p><h1>' + T.h1 + '</h1><p class="sub">' + T.sub + '</p>' +
+    '<div class="kpis">' + T.kpis.map(function (k) { return '<div class="kpi' + (k[3] ? ' ai' : '') + '"><b>' + k[0] + '<i>' + k[1] + '</i></b><small>' + k[2] + '</small></div>'; }).join('') + '</div>' +
+    (v === 'zalo' ? linkHtml() : '') + '</div>' + (v === 'linkedin' ? linkHtml() : '');
+  function linkHtml() { return '<div class="link"><div class="qr"><img src="../cv/qr-portfolio.svg" alt=""></div><div class="t"><small>' + T.link[0] + '</small><b>' + T.link[1] + '</b></div></div>'; }
+
+  // Nền: mạng lưới 50 điểm (= 50 cửa hàng) + đường thực hiện / dự báo / kế hoạch, cố định theo hạt giống
+  var seed = 11;
+  function rnd() { seed = (seed * 1664525 + 1013904223) >>> 0; return seed / 4294967296; }
+  var s = '', pts = [];
+  // Vùng đặt điểm: LinkedIn rải bên trái (dưới ảnh đại diện mờ), Zalo rải quanh viền
+  for (var i = 0; i < 50; i++) {
+    var x, y;
+    if (v === 'linkedin') { x = rnd() * 520; y = rnd() * H; if (rnd() < .35) { x = 420 + rnd() * (W - 420); y = rnd() < .5 ? rnd() * 50 : H - rnd() * 60; } }
+    else { var side = rnd(); if (side < .35) { x = rnd() * 230; y = rnd() * H; } else if (side < .7) { x = W - rnd() * 230; y = rnd() * H; } else { x = rnd() * W; y = H - rnd() * 210; } }
+    pts.push([x, y, 1.6 + rnd() * 2.4]);
+  }
+  for (var a = 0; a < pts.length; a++) for (var b = a + 1; b < pts.length; b++) {
+    var d = Math.hypot(pts[a][0] - pts[b][0], pts[a][1] - pts[b][1]);
+    if (d < 140) s += '<line x1="' + pts[a][0] + '" y1="' + pts[a][1] + '" x2="' + pts[b][0] + '" y2="' + pts[b][1] + '" stroke="rgba(94,224,207,' + ((1 - d / 140) * .3).toFixed(3) + ')" stroke-width="1"/>';
+  }
+  pts.forEach(function (p) { s += '<circle cx="' + p[0] + '" cy="' + p[1] + '" r="' + p[2] + '" fill="rgba(94,224,207,' + (.35 + p[2] / 10).toFixed(2) + ')"/>'; });
+
+  // Biểu đồ thực hiện - dự báo - kế hoạch
+  var cx0, cx1, cy0, cy1;
+  if (v === 'linkedin') { cx0 = 40; cx1 = 430; cy0 = 330; cy1 = 70; } else { cx0 = 60; cx1 = W - 60; cy0 = 770; cy1 = 560; }
+  var act = [0, .12, .08, .25, .33, .3, .45, .55, .62], n = 12;
+  function X(i) { return cx0 + (cx1 - cx0) * i / (n - 1); }
+  function Y(f) { return cy0 - (cy0 - cy1) * f; }
+  var ap = act.map(function (f, i) { return X(i) + ',' + Y(f); }).join(' ');
+  var fc = [[8, .62], [9, .72], [10, .84], [11, 1]].map(function (q) { return X(q[0]) + ',' + Y(q[1]); }).join(' ');
+  s += '<line x1="' + X(0) + '" y1="' + Y(.02) + '" x2="' + X(11) + '" y2="' + Y(.78) + '" stroke="rgba(245,181,68,.55)" stroke-width="2" stroke-dasharray="7 7"/>';
+  s += '<polygon points="' + X(0) + ',' + cy0 + ' ' + ap + ' ' + X(8) + ',' + cy0 + '" fill="rgba(20,195,181,.10)"/>';
+  s += '<polyline points="' + ap + '" fill="none" stroke="rgba(94,224,207,.75)" stroke-width="3" stroke-linejoin="round"/>';
+  s += '<polyline points="' + fc + '" fill="none" stroke="rgba(94,224,207,.75)" stroke-width="3" stroke-dasharray="9 7"/>';
+  act.forEach(function (f, i) { s += '<circle cx="' + X(i) + '" cy="' + Y(f) + '" r="4.5" fill="#0A2629" stroke="rgba(94,224,207,.85)" stroke-width="2"/>'; });
+  s += '<circle cx="' + X(11) + '" cy="' + Y(1) + '" r="14" fill="rgba(245,181,68,.18)"/><circle cx="' + X(11) + '" cy="' + Y(1) + '" r="6.5" fill="#F5B544"/>';
+  var bg = document.getElementById('bg');
+  bg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+  bg.innerHTML = s;
+</script>
+</body></html>
