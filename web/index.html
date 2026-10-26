@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="vi" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Trần Quang Vinh · Head of Planning · FP&amp;A, Data &amp; AI</title>
+<meta name="description" content="Portfolio của Trần Quang Vinh, Trưởng bộ phận Kế hoạch: FP&A ngành bán lẻ, P&L cửa hàng, phát triển mạng lưới, Power BI, SQL Server và Agentic AI.">
+<meta name="author" content="Trần Quang Vinh">
+<meta name="theme-color" content="#07141A">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Trần Quang Vinh · Head of Planning">
+<meta property="og:description" content="FP&A & Data Analytics in Retail · Retail P&L & Network Expansion · Power BI, SQL · Agentic AI & AI-powered web apps">
+<meta property="og:image" content="assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://*.supabase.co; base-uri 'none'; form-action 'self' mailto:">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/boot.js"></script>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Bỏ qua tới nội dung</a>
+<div class="progress" aria-hidden="true"><span id="progress"></span></div>
+
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a class="brand" href="#tong-quan" aria-label="Trần Quang Vinh">
+      <span class="brand-mark">VQ</span>
+      <span class="brand-text"><b>Trần Quang Vinh</b><small data-i18n="brandSub">FP&amp;A · Data · AI</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Mục chính">
+      <a href="#gioi-thieu" data-i18n="navAbout">Giới thiệu</a>
+      <a href="#hanh-trinh" data-i18n="navJourney">Hành trình</a>
+      <a href="#du-an" data-i18n="navProjects">Dự án</a>
+      <a href="#nang-luc" data-i18n="navSkills">Năng lực</a>
+      <a href="#lien-he" data-i18n="navContact">Liên hệ</a>
+    </nav>
+    <div class="nav-tools">
+      <button class="icon-btn kbd-btn" id="cmdBtn" type="button" aria-label="Tìm nhanh (Ctrl+K)"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><kbd>Ctrl K</kbd></button>
+      <button class="icon-btn" id="langBtn" type="button" aria-label="Đổi ngôn ngữ"><span class="lang-label">EN</span></button>
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Đổi giao diện sáng tối"><svg class="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+      <a class="btn btn-sm btn-primary cv-link" id="cvTop" href="assets/cv/CV-Tran-Quang-Vinh-VI.pdf" download data-i18n="cv">Tải CV</a>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Mở menu" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero" id="tong-quan">
+    <canvas id="heroNet" aria-hidden="true"></canvas>
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="wrap hero-in">
+      <div class="hero-text">
+        <p class="eyebrow"><span class="dot-live"></span><span data-i18n="openTo">Sẵn sàng cho cơ hội lãnh đạo tài chính & chiến lược bán lẻ</span></p>
+        <h1 class="hero-name">Trần Quang Vinh</h1>
+        <p class="hero-title"><span id="heroTitle">Trưởng bộ phận Kế hoạch</span> <span class="sep">·</span> <span class="rotator" id="rotator" aria-live="polite">FP&amp;A ngành bán lẻ</span></p>
+        <p class="hero-tag" id="heroTag"></p>
+        <div class="hero-cta">
+          <a class="btn btn-primary btn-lg" href="#du-an"><span data-i18n="ctaProjects">Xem 9 dự án</span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <button class="btn btn-ghost btn-lg" id="quickBtn" type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span data-i18n="ctaQuick">Xem nhanh 30 giây</span></button>
+          <a class="btn btn-ghost btn-lg cv-link" href="assets/cv/CV-Tran-Quang-Vinh-VI.pdf" download><svg viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg><span data-i18n="cvFull">Tải CV (PDF)</span></a>
+        </div>
+        <ul class="hero-meta">
+          <li><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span id="heroLoc">TP. Hồ Chí Minh</span></li>
+          <li><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg><span data-i18n="heroCo">Chuỗi bán lẻ ~50 cửa hàng</span></li>
+          <li><a href="https://www.linkedin.com/in/tran-quang-vinh-090866193/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="hero-card" aria-hidden="false">
+        <div class="avatar-ring"><img src="assets/avatar.jpg" alt="Ảnh Trần Quang Vinh" width="320" height="320"></div>
+        <div class="hero-badges">
+          <div class="badge-float b1"><b>FP&amp;A</b><small data-i18n="b1">Ngân sách · Dự báo</small></div>
+          <div class="badge-float b2"><b>Power BI</b><small>DAX · SQL Server</small></div>
+          <div class="badge-float b3"><b>Agentic AI</b><small data-i18n="b3">Hỏi bằng tiếng Việt</small></div>
+        </div>
+      </div>
+    </div>
+    <a class="scroll-cue" href="#thanh-tuu" aria-label="Cuộn xuống"><span></span></a>
+  </section>
+
+  <!-- KPI -->
+  <section class="kpis" id="thanh-tuu" aria-label="Thành tựu chính">
+    <div class="wrap kpi-grid" id="kpiGrid"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="gioi-thieu">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="sec-kicker">01 · <span data-i18n="navAbout">Giới thiệu</span></p>
+        <h2 data-i18n="aboutH">Tài chính, dữ liệu và AI vận hành như một hệ thống</h2>
+      </header>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="lead" id="aboutIntro"></p>
+          <p id="aboutStory"></p>
+          <blockquote class="quote" id="aboutQuote"></blockquote>
+        </div>
+        <div class="about-side reveal">
+          <h3 class="mini-h" data-i18n="howH">Cách tôi làm việc</h3>
+          <ol class="how" id="howList"></ol>
+        </div>
+      </div>
+      <div class="focus-grid" id="focusGrid"></div>
+    </div>
+  </section>
+
+  <!-- JOURNEY -->
+  <section class="section alt" id="hanh-trinh">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="sec-kicker">02 · <span data-i18n="navJourney">Hành trình</span></p>
+        <h2 data-i18n="journeyH">Từ chuyền may đến phòng họp Ban lãnh đạo</h2>
+        <p class="sec-sub" data-i18n="journeySub">Bấm vào từng vị trí để xem chi tiết công việc và dự án liên quan.</p>
+      </header>
+      <div class="phase-bar reveal" id="phaseBar"></div>
+      <ol class="timeline" id="timeline"></ol>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="du-an">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="sec-kicker">03 · <span data-i18n="navProjects">Dự án</span></p>
+        <h2 data-i18n="projectsH">Dự án tiêu biểu, mỗi dự án có demo chạy được</h2>
+        <p class="sec-sub" data-i18n="projectsSub">Bấm vào thẻ để xem bối cảnh, cách làm, kết quả và thử công cụ tương tác.</p>
+      </header>
+      <div class="filters reveal">
+        <div class="chips-row" id="catFilter" role="tablist"></div>
+        <label class="search">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="projSearch" type="search" placeholder="Tìm dự án, công cụ…" data-i18n-ph="searchPh" autocomplete="off">
+        </label>
+      </div>
+      <p class="filter-note" id="filterNote" hidden></p>
+      <div class="proj-grid" id="projGrid"></div>
+      <p class="empty" id="projEmpty" hidden data-i18n="noProj">Không có dự án phù hợp.</p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section alt" id="nang-luc">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="sec-kicker">04 · <span data-i18n="navSkills">Năng lực</span></p>
+        <h2 data-i18n="skillsH">Năng lực cốt lõi</h2>
+        <p class="sec-sub" data-i18n="skillsSub">Bấm vào một kỹ năng để xem dự án đã dùng kỹ năng đó.</p>
+      </header>
+      <div class="skills-grid">
+        <div class="radar-card reveal"><svg id="radar" viewBox="-80 0 580 380" role="img" aria-label="Biểu đồ năng lực"></svg></div>
+        <div class="skill-groups reveal" id="skillGroups"></div>
+      </div>
+      <div class="skills-extra">
+        <div class="card-soft reveal"><h3 class="mini-h" data-i18n="softH">Kỹ năng mềm</h3><ul class="ticks" id="softList"></ul></div>
+        <div class="card-soft reveal"><h3 class="mini-h" data-i18n="langH">Ngoại ngữ</h3><div id="langList"></div></div>
+        <div class="card-soft reveal"><h3 class="mini-h" data-i18n="interestH">Lĩnh vực quan tâm</h3><div class="tags" id="interestList"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTS -->
+  <section class="section" id="chung-chi">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="sec-kicker">05 · <span data-i18n="certNav">Học vấn & chứng chỉ</span></p>
+        <h2 data-i18n="certH">Học liên tục, áp dụng ngay vào việc</h2>
+      </header>
+      <div class="edu-card reveal" id="eduCard"></div>
+      <div class="chips-row cert-filter reveal" id="certFilter"></div>
+      <div class="cert-grid" id="certGrid"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-sec" id="lien-he">
+    <div class="wrap contact-grid">
+      <div class="contact-left reveal">
+        <p class="sec-kicker">06 · <span data-i18n="navContact">Liên hệ</span></p>
+        <h2 data-i18n="contactH">Cùng trao đổi về bán lẻ, FP&amp;A hay AI trong doanh nghiệp</h2>
+        <p class="sec-sub" data-i18n="contactSub">Tôi luôn sẵn lòng kết nối với những người làm bán lẻ, FP&amp;A, BI hoặc AI ứng dụng.</p>
+        <div class="contact-cards">
+          <button class="c-card" type="button" id="copyEmail"><small>Email</small><b id="cEmail">trquangvinh39@gmail.com</b><span class="c-act" data-i18n="copy">Chép</span></button>
+          <a class="c-card" id="cPhoneLink" href="tel:+84947730478"><small data-i18n="phone">Điện thoại</small><b>0947 730 478</b><span class="c-act" data-i18n="call">Gọi</span></a>
+          <a class="c-card" href="https://www.linkedin.com/in/tran-quang-vinh-090866193/" target="_blank" rel="noopener"><small>LinkedIn</small><b>tran-quang-vinh</b><span class="c-act" data-i18n="open">Mở</span></a>
+          <button class="c-card" type="button" id="vcardBtn"><small data-i18n="vcardS">Danh bạ</small><b data-i18n="vcard">Lưu danh thiếp (.vcf)</b><span class="c-act">↓</span></button>
+        </div>
+      </div>
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <h3 data-i18n="formH">Gửi lời nhắn</h3>
+        <div class="f-row">
+          <label><span data-i18n="fName">Họ tên</span><input name="name" required maxlength="120" autocomplete="name"></label>
+          <label><span>Email</span><input name="email" type="email" required maxlength="200" autocomplete="email"></label>
+        </div>
+        <label><span data-i18n="fCompany">Công ty / tổ chức</span><input name="company" maxlength="160" autocomplete="organization"></label>
+        <label><span data-i18n="fTopic">Chủ đề</span>
+          <select name="topic" id="fTopic"></select>
+        </label>
+        <label><span data-i18n="fMsg">Nội dung</span><textarea name="body" rows="5" required maxlength="4000"></textarea></label>
+        <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn btn-primary btn-lg" type="submit" id="sendBtn"><span data-i18n="send">Gửi lời nhắn</span><svg viewBox="0 0 24 24"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></button>
+        <p class="form-msg" id="formMsg" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot-in">
+    <p>© <span id="year">2026</span> Trần Quang Vinh · <span data-i18n="footNote">Số liệu trong demo là minh hoạ, không bao gồm dữ liệu nội bộ công ty.</span></p>
+    <p class="foot-stats" id="footStats"></p>
+  </div>
+</footer>
+
+<!-- CASE STUDY DRAWER -->
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="dTitle" hidden>
+  <div class="drawer-bg" data-close></div>
+  <article class="drawer-panel" id="drawerPanel" tabindex="-1">
+    <header class="d-top">
+      <button class="btn btn-ghost btn-sm" type="button" data-close><svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span data-i18n="back">Quay lại</span></button>
+      <span class="d-count" id="dCount"></span>
+      <div class="d-nav">
+        <button class="icon-btn" type="button" id="dLike" aria-label="Thích dự án"><svg viewBox="0 0 24 24"><path d="M12 21s-8-5.3-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.7-8 11-8 11z"/></svg><span id="dLikeN"></span></button>
+        <button class="icon-btn" type="button" id="dShare" aria-label="Chép link dự án"><svg viewBox="0 0 24 24"><path d="M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg></button>
+        <button class="icon-btn" type="button" id="dPrev" aria-label="Dự án trước"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button>
+        <button class="icon-btn" type="button" id="dNext" aria-label="Dự án sau"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+        <button class="icon-btn" type="button" data-close aria-label="Đóng"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      </div>
+    </header>
+    <div class="d-body" id="dBody"></div>
+  </article>
+</div>
+
+<!-- QUICK VIEW -->
+<div class="modal" id="quick" role="dialog" aria-modal="true" aria-labelledby="qTitle" hidden>
+  <div class="drawer-bg" data-close></div>
+  <div class="modal-panel" id="quickPanel" tabindex="-1"></div>
+</div>
+
+<!-- COMMAND PALETTE -->
+<div class="modal cmd" id="cmd" role="dialog" aria-modal="true" aria-label="Tìm nhanh" hidden>
+  <div class="drawer-bg" data-close></div>
+  <div class="cmd-panel">
+    <label class="cmd-input"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="cmdInput" placeholder="Gõ để tìm mục, dự án, kỹ năng…" data-i18n-ph="cmdPh" autocomplete="off"><kbd>Esc</kbd></label>
+    <ul class="cmd-list" id="cmdList" role="listbox"></ul>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js" defer></script>
+<script src="js/data.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/demos.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
