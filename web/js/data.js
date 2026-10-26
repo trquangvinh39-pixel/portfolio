@@ -18,8 +18,8 @@ PF.profile = {
     en: ['Retail FP&A', 'Store P&L analytics', 'Network expansion', 'Power BI · SQL Server', 'Agentic AI & web apps'],
   },
   tagline: {
-    vi: 'Bán lẻ chạy trên biên lợi nhuận mỏng và quyết định nhanh. Tôi giúp ban lãnh đạo ra những quyết định đó một cách tự tin, bằng đúng con số, đúng lúc.',
-    en: 'Retail runs on thin margins and fast decisions. I help leadership make those decisions with confidence, with the right numbers at the right time.',
+    vi: 'Bán lẻ vận hành trên biên lợi nhuận mỏng và cần quyết định nhanh. Công việc của tôi là chuẩn bị số liệu chính xác, kịp thời và dễ hiểu để hỗ trợ Ban lãnh đạo ra quyết định.',
+    en: 'Retail runs on thin margins and quick decisions. My work is to provide accurate, timely and clear numbers that support leadership decisions.',
   },
   cv: { vi: 'assets/cv/CV-Tran-Quang-Vinh-VI.pdf', en: 'assets/cv/CV-Tran-Quang-Vinh-EN.pdf' },
 };
@@ -38,8 +38,8 @@ PF.about = {
     en: 'I lead the Planning Department at a nationwide bookstore and lifestyle retail chain of around 50 stores, reporting to the CEO and working closely with the COO, covering FP&A, network development and the data and BI function.',
   },
   story: {
-    vi: 'Sự nghiệp của tôi bắt đầu trong ngành may xuất khẩu, nơi tôi học cách lập kế hoạch sát năng lực và thời hạn thực tế. Sáu năm trong bán lẻ bổ sung góc nhìn tài chính, dữ liệu và công nghệ. Nền tảng Kế toán trưởng cùng SQL, Power BI và Agentic AI giúp tôi biến dữ liệu thành quyết định có cơ sở.',
-    en: 'My career started in export garment manufacturing, where I learned to plan against real capacity and real deadlines. Six years in retail added the finance, data and technology side. A Chief Accountant foundation plus SQL, Power BI and Agentic AI let me turn data into well-founded decisions.',
+    vi: 'Sự nghiệp của tôi bắt đầu trong ngành may xuất khẩu, nơi tôi học cách lập kế hoạch sát năng lực và thời hạn thực tế. Sáu năm trong bán lẻ bổ sung góc nhìn tài chính, dữ liệu và công nghệ. Nền tảng Kế toán trưởng cùng SQL, Power BI và Agentic AI giúp tôi chuyển dữ liệu thành đề xuất có cơ sở.',
+    en: 'My career started in export garment manufacturing, where I learned to plan against real capacity and real deadlines. Six years in retail added the finance, data and technology side. A Chief Accountant foundation plus SQL, Power BI and Agentic AI help me turn data into well-founded recommendations.',
   },
   how: [
     { t: { vi: 'Bắt đầu từ câu hỏi kinh doanh', en: 'Start from the business question' }, d: { vi: 'Không bắt đầu từ dữ liệu. Hỏi trước: quyết định nào cần đưa ra, ai đưa ra, khi nào.', en: 'Not from the data. First ask: which decision, who makes it, and by when.' } },
@@ -53,15 +53,15 @@ PF.about = {
     { icon: 'ai', t: { vi: 'Dữ liệu & AI', en: 'Data & AI' }, d: { vi: 'Kho SQL Server, mô hình Power BI, lớp Agentic AI hỏi bằng ngôn ngữ tự nhiên, web app nội bộ.', en: 'SQL Server warehouse, Power BI model, an Agentic AI layer in plain language, internal web apps.' } },
   ],
   quote: {
-    vi: 'Đội tài chính giỏi nhất của thập kỷ tới sẽ dành ít thời gian chuẩn bị số liệu hơn và nhiều thời gian định hình quyết định hơn.',
-    en: 'The best finance teams of the next decade will spend less time preparing numbers and more time shaping decisions.',
+    vi: 'Tôi tin rằng khi việc chuẩn bị số liệu được tự động hoá, đội kế hoạch – tài chính sẽ có thêm thời gian cho phân tích và hỗ trợ ra quyết định.',
+    en: 'When preparing numbers is automated, planning and finance teams gain more time for analysis and decision support.',
   },
 };
 
 PF.phases = [
   { id: 'mfg', from: 2017, to: 2020, label: { vi: 'Sản xuất may mặc', en: 'Garment manufacturing' }, d: { vi: 'Lập kế hoạch sát năng lực chuyền và hạn giao', en: 'Planning against line capacity and deadlines' } },
   { id: 'retail', from: 2020, to: 2026, label: { vi: 'Kế hoạch & đầu tư bán lẻ', en: 'Retail planning & investment' }, d: { vi: 'FP&A, mặt bằng, thẩm định dự án', en: 'FP&A, real estate, project appraisal' } },
-  { id: 'lead', from: 2026, to: 2027, label: { vi: 'Dẫn dắt Kế hoạch · Dữ liệu & AI', en: 'Leading Planning · Data & AI' }, d: { vi: 'Tài chính, dữ liệu và AI như một hệ thống', en: 'Finance, data and AI as one system' } },
+  { id: 'lead', from: 2026, to: 2027, label: { vi: 'Phòng Kế hoạch · Dữ liệu & AI', en: 'Planning · Data & AI' }, d: { vi: 'Kế hoạch, dữ liệu và AI phối hợp đồng bộ', en: 'Planning, data and AI working together' } },
 ];
 
 PF.jobs = [
@@ -158,7 +158,7 @@ PF.jobs = [
     org: { vi: 'Công ty May Hoà Phát', en: 'Hoa Phat Garment' },
     orgNote: { vi: 'Sản xuất may mặc', en: 'Garment manufacturing' },
     period: { vi: '04/2020 – 09/2020', en: 'Apr 2020 – Sep 2020' },
-    summary: { vi: 'Đưa mọi đơn hàng từ lúc xác nhận đến khi giao đúng hạn.', en: 'Took every order from confirmation to on-time delivery.' },
+    summary: { vi: 'Lập kế hoạch và theo dõi đơn hàng từ khi xác nhận đến khi giao hàng.', en: 'Planned and tracked orders from confirmation to delivery.' },
     points: {
       vi: [
         'Lập kế hoạch sản xuất toàn công ty ngay khi xác nhận đơn hàng',
@@ -216,7 +216,7 @@ PF.projects = [
     metrics: [
       { v: '~70%', l: { vi: 'yêu cầu đột xuất tự phục vụ', en: 'ad hoc requests self served' } },
       { v: '~40h', l: { vi: 'tiết kiệm mỗi tháng', en: 'saved every month' } },
-      { v: '24/7', l: { vi: 'trả lời không chờ phòng KH', en: 'answers without waiting' } },
+      { v: 'DAX', l: { vi: 'AI tự viết truy vấn', en: 'queries written by AI' } },
     ],
     context: { vi: 'Phòng Kế hoạch nhận rất nhiều yêu cầu số liệu đột xuất từ ban lãnh đạo và các ngành hàng: doanh thu cửa hàng X tuần này, vì sao ngành hàng Y giảm… Mỗi yêu cầu nhỏ nhưng cộng lại chiếm phần lớn thời gian của đội.', en: 'The Planning team received a constant stream of ad hoc data questions from leadership and category teams: store X sales this week, why category Y dropped… Each one small, together they ate most of the team’s time.' },
     problem: { vi: 'Làm sao để người hỏi tự có câu trả lời đúng, nhất quán với số liệu chính thức, mà không cần biết DAX hay mở Power BI?', en: 'How can people get correct answers, consistent with official numbers, without knowing DAX or opening Power BI?' },
@@ -346,7 +346,7 @@ PF.projects = [
   {
     id: 'bi-stack', cat: ['data'], year: '2021–2025', icon: 'db', hue: 220,
     title: { vi: 'Từ Excel thủ công sang SQL Server + Power BI', en: 'From manual Excel to SQL Server + Power BI' },
-    tagline: { vi: 'Xây lại toàn bộ hệ thống báo cáo quản trị trên kho dữ liệu SQL Server và Power BI với hơn 20 báo cáo, có dashboard P&L cửa hàng cho Tổng Giám đốc.', en: 'Rebuilt management reporting on a SQL Server warehouse and Power BI with 20+ reports, including a store P&L dashboard for the CEO.' },
+    tagline: { vi: 'Chuyển hệ thống báo cáo quản trị sang kho dữ liệu SQL Server và Power BI với hơn 20 báo cáo, có dashboard P&L cửa hàng cho Tổng Giám đốc.', en: 'Rebuilt management reporting on a SQL Server warehouse and Power BI with 20+ reports, including a store P&L dashboard for the CEO.' },
     metrics: [
       { v: '20+', l: { vi: 'báo cáo quản trị', en: 'management reports' } },
       { v: '1', l: { vi: 'nguồn số liệu duy nhất', en: 'single source of truth' } },
