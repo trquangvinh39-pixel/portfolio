@@ -9,7 +9,7 @@
     try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; }
   }
 
-  PF.lang = document.documentElement.lang === 'en' ? 'en' : 'vi';
+  PF.lang = document.documentElement.lang === 'vi' ? 'vi' : 'en';
   PF.t = function (o) { return o == null ? '' : typeof o === 'string' ? o : (o[PF.lang] != null ? o[PF.lang] : o.vi); };
   var t = PF.t;
 
@@ -478,7 +478,7 @@
   /* ---------- Định tuyến theo địa chỉ (#du-an/<mã>) ---------- */
   function route() {
     var h = decodeURIComponent(location.hash);
-    if (h === '#en') { history.replaceState(null, '', location.pathname); return; }
+    if (h === '#en' || h === '#vi') { history.replaceState(null, '', location.pathname); return; }
     var mm = h.match(/^#du-an\/([\w-]+)/);
     if (mm && byId(mm[1])) openProject(mm[1]);
     else if (current) closeProject();
@@ -579,7 +579,7 @@
   /* ---------- Khởi động ---------- */
   $('#year').textContent = new Date().getFullYear();
   var savedLang = store('pf-lang');
-  if (savedLang === 'en' || location.hash === '#en') PF.lang = 'en';
+  PF.lang = location.hash === '#vi' || (savedLang === 'vi' && location.hash !== '#en') ? 'vi' : 'en';
   renderAll();
   events();
   rotator();
